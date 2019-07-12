@@ -5,11 +5,13 @@ import DiceGame from './components/DiceGame/DiceGame'
 import IconsList from "./components/Icons/IconsList";
 import CoinFlipGame from './components/CoinFlip/CoinFlipGame'
 import ColoredBoxes from "./components/ColoredBoxes/ColoredBoxes";
+import LightsOutGame from "./components/LightOutGame/LightsOutGame";
 
 function App() {
   return (
     <div className="App">
-        <ColoredBoxes/>
+        <LightsOutGame/>
+        {/*<ColoredBoxes/>*/}
         {/*<CoinFlipGame/>*/}
         {/*<IconsList/>*/}
       {/*<RandomNumberGenerator/>*/}

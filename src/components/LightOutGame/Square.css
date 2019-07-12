@@ -1,0 +1,20 @@
+div.Square{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: #0b0b47;
+}
+
+div.Square.selected{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: #5cbad1;
+}
+
+div.Square:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    background: orange;
+    box-shadow: 1px 3px 4px lightyellow;
+}

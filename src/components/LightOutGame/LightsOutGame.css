@@ -1,0 +1,70 @@
+.new-game-button{
+    display: block;
+    margin-left: 30px;
+}
+
+.LightsOut-game-title{
+    font-size: 44px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200 !important;
+    text-shadow: 2px 3px 5px white;
+}
+
+.LightsOut-winning-title{
+    font-size: 44px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500 !important;
+    text-shadow: 2px 3px 5px white;
+}
+
+.LightsOut-flashing-title-orange, .LightsOut-title-orange {
+    color: #ffa500;
+    animation: flicker 0.7s linear infinite;
+}
+
+.LightsOut-flashing-title-blue, .LightsOut-title-blue {
+    color: #69c2ff;
+    animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity:0.1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    2% {
+        opacity:0.1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    4% {
+        opacity:1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+
+    19% {
+        opacity:1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    21% {
+        opacity:0.1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    23% {
+        opacity:1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    80% {
+        opacity:1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    83% {
+        opacity:0.4;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    87% {
+        opacity:1;
+        text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+}

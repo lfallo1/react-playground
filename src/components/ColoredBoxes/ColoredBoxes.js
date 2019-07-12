@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Box from './Box.js'
 
-class ColoredBoxes extends Component{
+class ColoredBoxes extends Component {
 
     static defaultProps = {
         colors: [
@@ -20,19 +20,19 @@ class ColoredBoxes extends Component{
         ]
     }
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            boxes: Array.from({ length: 18 }, () => ({ color: this.props.colors[Math.floor(Math.random() * (this.props.colors.length-1))]}))
+            boxes: Array.from({length: 18}, () => ({color: this.props.colors[Math.floor(Math.random() * (this.props.colors.length - 1))]}))
         };
         this.changeColor = this.changeColor.bind(this);
     }
 
-    changeColor(currentColor, index){
+    changeColor(currentColor, index) {
         let newColor = null;
-        do{
-            newColor = this.props.colors[Math.floor(Math.random() * (this.props.colors.length-1))]
-        } while(newColor === currentColor);
+        do {
+            newColor = this.props.colors[Math.floor(Math.random() * (this.props.colors.length - 1))]
+        } while (newColor === currentColor);
 
         let boxes = [...this.state.boxes];
         boxes[index].color = newColor;
@@ -41,8 +41,9 @@ class ColoredBoxes extends Component{
         });
     }
 
-    render(){
-        const boxesList = this.state.boxes.map((box, idx) => <Box key={idx} color={box.color} changeColor={this.changeColor} idx={idx} />);
+    render() {
+        const boxesList = this.state.boxes.map((box, idx) => <Box key={idx} color={box.color}
+                                                                  changeColor={this.changeColor} idx={idx}/>);
 
         return (
             <div className="container">
